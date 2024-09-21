@@ -1,0 +1,12 @@
+﻿@{
+    @model IEnumerable<Jogo>
+
+    <h2>Lista de Jogos</h2>
+    <ul>
+        @foreach (var jogo in Model)
+        {
+            <li>@jogo.Nome - @jogo.Genero</li>
+        }
+    </ul>
+
+}

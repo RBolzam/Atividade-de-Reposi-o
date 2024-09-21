@@ -1,0 +1,11 @@
+﻿@{
+    @model IEnumerable<Desenvolvedor>
+
+    <h2>Lista de Desenvolvedores</h2>
+    <ul>
+        @foreach (var desenvolvedor in Model)
+        {
+            <li>@desenvolvedor.Nome - @desenvolvedor.Pais</li>
+        }
+    </ul>
+}

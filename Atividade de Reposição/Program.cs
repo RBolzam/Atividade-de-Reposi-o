@@ -19,12 +19,6 @@ namespace Atividade_de_Reposição
                 app.UseHsts();
             }
 
-            //Add rota customizada
-            app.MapControllerRoute(
-            name: "cursos",
-            pattern: "Formacoes/{action=Index}/{id?}",
-            defaults: new { controller = "Cursos" });
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
